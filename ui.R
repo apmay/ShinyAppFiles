@@ -2,6 +2,8 @@ shinyUI(pageWithSidebar(
   headerPanel("Fuel Economy Estimator"),
   
   sidebarPanel(
+    h4('Select car details below and click "Submit" to calculate estimated fuel economy.'),
+    h4('------------------------------'),
     sliderInput('wt', 'Car Weight (1000lb)', value = 3, min = 1.5, max = 5.5, step = 0.2),
     sliderInput('qsec', 'Quarter Mile Time (sec)', value = 18, min = 14, max = 23, step = 0.5),
     radioButtons('am', 'Transmission', c("Automatic (0)" = 0, "Manual (1)" = 1)),

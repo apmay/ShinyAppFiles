@@ -1,7 +1,3 @@
-diabetesRisk <- function(glucose) {
-  glucose / 200
-}
-
 fe.est <- function(wt,qsec,am) {
   -3.1855*wt + 1.5998*qsec + 4.2995*as.numeric(am)
 }
